@@ -24,11 +24,11 @@ setx SILICONFLOW_API_KEY "sk-xxxxxxxxxxxxxxxx"        # Windows
 
 **方法二：命令行参数**
 ```bash
-python transcript_polisher.py --api-key sk-xxxxxxxxxxxxxxxx
+python run.py --api-key sk-xxxxxxxxxxxxxxxx
 ```
 
 **方法三：直接修改脚本**  
-打开 `transcript_polisher.py`，找到 `CONFIG` 字典，将 `"api_key"` 改为你的 Key。
+打开 `transcript_polisher\config.py`，找到 `CONFIG` 字典，将 `"api_key"` 改为你的 Key。
 
 ---
 
@@ -48,13 +48,13 @@ recording_raw/
 
 ```bash
 # 基本用法（使用默认文件夹）
-python transcript_polisher.py
+python run.py
 
 # 自定义输入/输出文件夹
-python transcript_polisher.py -i my_transcripts -o my_output
+python run.py -i my_transcripts -o my_output
 
 # 完整参数
-python transcript_polisher.py \
+python run.py \
   --api-key sk-xxx \
   --input recording_raw \
   --output recording_polished \
