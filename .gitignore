@@ -15,3 +15,6 @@ MANIFEST
 .coverage
 htmlcov/
 .cache
+
+recording_raw/
+recording_polished/
